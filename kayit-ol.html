@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="en-iyi-filmler.html">En Iyi Filmler</a>
+      <a href="kayit-ol.html">Kayit Ol</a>
+    </nav>
+    <hr />
+    <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+
+    <h2>Hesap Bilgileriniz</h2>
+    <div>
+      <form>
+        <label for="kadi">Kullanici adi:</label><br />
+        <input
+          type="text"
+          id="kadi"
+          name="kadi"
+          value="Kullanici adi giriniz"
+        /><br />
+        <label for="eposta">Eposta:</label><br />
+        <input
+          type="email"
+          name="eposta"
+          id="eposta"
+          value="Eposta giriniz"
+        /><br />
+
+        <label for="pwd">Parola:</label><br />
+        <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          value="Parola giriniz"
+        /><br />
+      </form>
+    </div>
+    <h2>Kisisel Bilgileriniz</h2>
+
+    <form>
+      <label for="adi">Adiniz:</label>
+      <input type="text" id="adi" name="adi" aria-valuenow="adiniz" /><br />
+      <label for="sadi">Soyadiniz:</label>
+      <input type="text" id="sadi" name="sadi" /><br />
+      <label for="sehir">Sehir:</label>
+      <select name="" id="sehir">
+        <option>adiyaman</option>
+        <option>adiyaman2</option>
+        <option>adiyaman3</option>
+        <option>adiyaman4</option></select
+      ><br />
+      <p>
+        Cinsiyet
+        <input type="radio" id="cinsiyet1" name="cinsiyet1" value="Kadin" />
+        <label for="cinsiyet1">Kadin</label>
+
+        <input type="radio" id="cinsiyet2" name="cinsiyet2" value="Erkek" />
+        <label for="cinsiyet2">Erkek</label>
+      </p>
+    </form>
+  </body>
+</html>
