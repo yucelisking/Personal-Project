@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root {
+    --bg-color: #171d21;
+    --text-color: #f9f7f3;
+    --primary-color: #ff7900;
+    --secondary-color: #3c096c;
+
+}
+
+body {
+    background: var(--bg-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    top: 0;
+    position: fixed;
+    backdrop-filter: blur(2px);
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.sticky {
+    backdrop-filter: blur(6px);
+    transition: all 0.5s ease-in-out;
+    background: rgba(63, 63, 63, 0.122);
+
+}
+
+.logo img {
+    height: 50px;
+}
+
+.icon-name {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 0.8rem;
+    transition: all 0.4s ease;
+}
+
+.navbar a:hover {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+
+.content {
+    width: 100%;
+    height: 110vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url(img/homepage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-screen h1 {
+    font-size: 50px;
+    color: #fff;
+
+}
+
+.featured-1 {
+    font-size: 25px;
+    padding: 50px 100px;
+
+}
+
+.featured-text {
+    color: var(--text-color);
+}
+
+#movies {
+    color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.featured-box {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+
+}
+
+.movie-img img {
+    width: 200px;
+    height: auto;
+}
+
+.movie-img {
+
+    background: #12141c;
+    padding: 40px;
+    border-top: 5px solid transparent;
+    border-radius: 0.8rem;
+}
+
+#series {
+    color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.contact {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-form {
+    display: flex;
+}
+
+
+
+/* @media screen (max-width:720px) {
+
+    body
+} */
