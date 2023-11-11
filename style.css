@@ -9,10 +9,10 @@
 }
 
 :root {
-    --bg-color: #171d21;
+    --bg-color: #393e46;
     --text-color: #f9f7f3;
     --primary-color: #ff7900;
-    --secondary-color: #3c096c;
+    --secondary-color: #c355f5;
 
 }
 
@@ -27,7 +27,7 @@ header {
     padding: 20px 10%;
     top: 0;
     position: fixed;
-    backdrop-filter: blur(2px);
+    background: #393e46;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -40,17 +40,25 @@ header {
 
 }
 
+.logo {
+    display: flex;
+}
+
 .logo img {
     height: 50px;
 }
 
 .icon-name {
-    color: var(--text-color);
+    color: var(--secondary-color);
+    font-size: 25px;
     text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+
 }
 
 .navbar a {
-    color: var(--text-color);
+    color: var(--primary-color);
     font-size: 17px;
     padding: 10px 25px;
     border-radius: 0.8rem;
@@ -79,7 +87,11 @@ header {
 }
 
 .main-screen h1 {
-    font-size: 50px;
+    position: absolute;
+    left: 100px;
+    bottom: 150px;
+    font-size: 60px;
+
     color: #fff;
 
 }
@@ -90,8 +102,11 @@ header {
 
 }
 
-.featured-text {
-    color: var(--text-color);
+.featured-text a {
+    color: var(--primary-color);
+    display: flex;
+    align-items: end;
+
 }
 
 #movies {
@@ -124,6 +139,7 @@ header {
     border-radius: 0.8rem;
 }
 
+
 #series {
     color: var(--secondary-color);
     font-family: Arial, Helvetica, sans-serif;
@@ -135,12 +151,39 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: var(--primary-color);
+
 }
 
 .contact-form {
     display: flex;
 }
 
+hr {
+    height: 4px;
+    margin-block: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: none;
+    border-top: 1px solid #11141d;
+    border-bottom: 1px solid #ffffff1a;
+}
+
+footer {
+    background-color: var(--bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
 
 
 /* @media screen (max-width:720px) {
